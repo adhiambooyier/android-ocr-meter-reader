@@ -10,7 +10,9 @@ public class Meter {
     @SerializedName("mtrNumber")
     @Expose
     private String mtrNumber;
-
+    @SerializedName("userId")
+    @Expose
+    private String userId;
     /**
      * No args constructor for use in serialization
      */
@@ -18,9 +20,10 @@ public class Meter {
 
     }
 
-    public Meter(String id, String mtrNumber) {
+    public Meter(String id, String mtrNumber, String userId) {
         this.id = id;
         this.mtrNumber = mtrNumber;
+        this.userId = userId;
     }
 
     public String getId() {
@@ -37,6 +40,14 @@ public class Meter {
 
     public void setMtrNumber(String mtrNumber) {
         this.mtrNumber = mtrNumber;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 }
 

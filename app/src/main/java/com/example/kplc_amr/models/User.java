@@ -5,7 +5,6 @@ public class User {
     private String fname;
     private String lname;
     private String email;
-    private String mtrNumber;
 
     public User() {
     }
@@ -16,12 +15,11 @@ public class User {
         this.email = email;
     }
 
-    public User(String id, String fname, String lname, String email, String mtrNumber) {
+    public User(String id, String fname, String lname, String email) {
         this.id = id;
         this.fname = fname;
         this.lname = lname;
         this.email = email;
-        this.mtrNumber = mtrNumber;
     }
 
     public String getId() {
@@ -54,13 +52,5 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public String getMtrNumber() {
-        return mtrNumber;
-    }
-
-    public void setMtrNumber(String mtrNumber) {
-        this.mtrNumber = mtrNumber;
     }
 }
