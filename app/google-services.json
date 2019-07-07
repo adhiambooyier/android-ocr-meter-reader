@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "36083286023",
+    "firebase_url": "https://kplc-amr.firebaseio.com",
+    "project_id": "kplc-amr",
+    "storage_bucket": "kplc-amr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36083286023:android:d324260b98c7af6e",
+        "android_client_info": {
+          "package_name": "com.example.kplc_amr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "36083286023-n0remtf041k7kniot9knb0oshjg7nrvo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kplc_amr",
+            "certificate_hash": "d2f1ad8b54d419e764a9eec99467c86755c25fee"
+          }
+        },
+        {
+          "client_id": "36083286023-vnjrcq1iol3j8urtge018jj5gptt4kvr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAryoUXJcJSh0xS7VSBRc_8tVxZgVPDLAU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "36083286023-vnjrcq1iol3j8urtge018jj5gptt4kvr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
