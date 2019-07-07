@@ -6,36 +6,37 @@ import com.google.gson.annotations.SerializedName;
 public class Meter {
     @SerializedName("id")
     @Expose
-    private Integer id;
-    @SerializedName("photo")
+    private String id;
+    @SerializedName("mtrNumber")
     @Expose
-    private String photo;
+    private String mtrNumber;
 
     /**
      * No args constructor for use in serialization
      */
     public Meter() {
+
     }
 
-
-    public Meter(Integer id, String media) {
+    public Meter(String id, String mtrNumber) {
         this.id = id;
-        this.photo = media;
+        this.mtrNumber = mtrNumber;
     }
 
-    public Integer getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(String id) {
         this.id = id;
     }
 
-    public String getPhoto() {
-        return photo;
+    public String getMtrNumber() {
+        return mtrNumber;
     }
 
-    public void setPhoto(String photo) {
-        this.photo = photo;
+    public void setMtrNumber(String mtrNumber) {
+        this.mtrNumber = mtrNumber;
     }
 }
+
