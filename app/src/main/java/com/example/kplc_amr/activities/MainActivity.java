@@ -42,6 +42,9 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseAuth auth;
     private Uri uri;
 
+    Bundle extras = getIntent().getExtras();
+    String mtrNumber = extras.getString("meter", "");
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +53,8 @@ public class MainActivity extends AppCompatActivity {
         btnReadMeter = findViewById(R.id.btnReadMeter);
         txtMeterNumber = findViewById(R.id.txtMeterNumber);
         imgThumbnail = findViewById(R.id.imgThumbnail);
+
+        txtMeterNumber.setText(mtrNumber);
 
         FirebaseStorage storage = FirebaseStorage.getInstance();
         storageRef = storage.getReference();
